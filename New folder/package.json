@@ -1,0 +1,23 @@
+{
+  "name": "video-chat",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mebin"
+  },
+  "description": "one to one",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "7.0.0"
+  },
+  "keywords": [
+    "peer-to-peer"
+  ],
+  "dependencies": {
+    "socket.io": "latest"
+  },
+  "analyze": false,
+  "license": "MIT"
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body onload="myFunction()">
+<div class="bg">
+</div>
+<div class="log-form" style="display:none;" id="caller">
+  <h2>Welcome to video chat</h2>
+  <form>
+    <input type="text" title="username" placeholder="Enter your name" id="room-id"/>
+    <button class="btn" id="open-room">Enter</button>
+  </form>
+</div><!--end log form -->
+
+<div class="load-form" id="loader">
+   <div class="psoload">
+	  <div class="straight"></div>
+	  <div class="curve"></div>
+	  <div class="center"></div>
+	  <div class="inner"></div>
+	</div>
+</div><!--end load form -->
+<div class="answer-form" style="display:none;" id="anwserCall">
+  <h2>Welcome to video chat</h2>
+  <form>
+    <p> Please click "Enter" button to start video chatting.</p>
+    <button  class="btn answer">Enter</button>
+  </form>
+</div><!--end log form -->
+ <div id="videos-container"></div>
+</body>
+ <script src="script.js"></script>
+</html>
