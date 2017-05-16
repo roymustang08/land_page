@@ -1,9 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600);
+@font-face {
+    font-family: roboto;
+    src: url(roboto.thin.ttf);
+}
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: 'open sans', helvetica, arial, sans;
+  font-family: 'open sans', roboto;
   background: url(pexels.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -52,14 +55,14 @@ body {
     transform: translate(0%, 0%);
   }
 }
-.log-form form ,.answer-form form{
+.log-form .container ,.answer-form .container{
   display: block;
   width: 100%;
   padding: 2em;
 }
 .log-form h2 ,.answer-form h2{
   color: #EEEEEE;
-  font-family: 'open sans condensed';
+  font-family: roboto;
   font-size: 1.35em;
   display: block;
   background: #30546a;
@@ -252,3 +255,22 @@ body {
   transform: rotate(-48deg);
   -webkit-transform: rotate(-48deg);
 }
+/*
+* video style
+*/
+.small-video{
+	position:absolute;
+	right: 30px;
+    bottom: 10px;
+	width:200px !important;
+	height:200px;
+}
+.small-video .volume-control{
+	display:none;
+}
+.small-video .media-box,.small-video .media-box video{
+	height:100%;
+}
+.full-video{
+	width:100% !important;
+} 
